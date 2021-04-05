@@ -1,0 +1,441 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+#header{
+    color : white;
+    width: 100%;
+    height: 64px;
+    position: relative;
+    float: left;
+    min-width: 1092px;
+    z-index: 100;
+}
+
+.wrap{
+    width: 1370px;
+    margin: 0 auto;
+    position: relative;
+}
+.item_box{
+    position : absolute;
+}
+.f1{
+    float: left;
+    -webkit-filter: brightness(0.90);
+    filter: brightness(0.90);
+    color : white;
+    font-size : 21px;
+    padding-top: 12px;
+    padding-left : 25px;
+    position : relative;
+}
+.log{
+    margin-right: 13px;
+    padding-top: 11px;
+    cursor: pointer;
+}
+.center1{
+    color : rgb(226, 69, 95);
+    margin-top : 10px;
+    text-align: center;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+.cate_list{
+    height: 62px;
+    line-height: 62px;
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+.cate_list li{
+    height: 62px;
+    margin-right: 5px;
+    padding: 0px 19px;
+    cursor: pointer;
+    float: left;
+}
+div, input, label, a, select, ul, li {
+    box-sizing: border-box;
+}
+ol, ul{
+    list-style: none;
+}
+div {
+    display: block;
+}
+.main_top{
+    background: linear-gradient(to bottom, #1b1b1b, rgba(0, 0, 0, 0)),#111111 url(./image/sea.jpg) no-repeat center;
+
+    background-size: cover;
+    background-position: center center;
+    height: 90vh;
+    padding-bottom : 700px;
+    margin-right : 80px;
+    margin-left : 80px;
+}
+/* main_title */
+.main_top_title {
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 250px;
+}
+.main_top_desc {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+.search_area {
+    width: 840px;
+    height: 100px;
+    border-radius: 3px;
+    background: url(./icon/bgb_60.png) repeat;
+    margin: 50px auto;
+    margin-top: 60px;
+    padding : 20px;
+    padding-right : 0px;
+    padding-bottom : 150px;
+    position: relative;
+    
+}
+.search_input {
+    width: 770px;
+    height: 50px;
+    margin : 20px;
+    border: none;
+    font-size: 20px;
+    color: #b3b3b3;
+    /* background: url(area_search_ico.gif) no-repeat white;
+    background-position: center right; */
+    margin: auto;
+    
+}
+.search_icon{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    color: #b3b3b3;
+    margin: auto;
+    padding-right : 10px;
+    background: url(./css/icon/area_search_ico.gif) repeat;
+    float: right;
+
+}
+#city_autocomplete {
+    width: 600px;
+    /* border: solid 1px #c8c8ca; */
+    background: #fff;
+    position: absolute;
+    top: 70px;
+    z-index: 9;
+    display: none;
+}
+.latest_search {
+    float: left;
+    font-size: 14px;
+    color: white;
+}
+.latest_a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+/* 목록 칸  */
+.page.white {
+    background: white;
+    padding-top: 700px;
+}
+.page {
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.page_title {
+    color: #363636;
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+
+}
+.clear {
+    clear: both;
+}
+.intro_list {
+    padding-top: 10px;
+    width: 1116px;
+    overflow: hidden;
+}
+.intro_box {
+    width: 348px;
+    height: 295px;
+    margin-right: 24px;
+    display: block;
+    cursor: pointer;
+    float: left;
+
+}
+.intro_title {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: #1a7ad9;
+    padding-top: 10px;
+}
+.intro_desc {
+    padding-top: 23px;
+    font-weight: bold;
+    color: #555555;
+    font-size: 14px;
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 22px;
+}
+.intro_box img {
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    overflow: hidden;
+    width:348px;
+    height: 170px;
+}
+.head_right{
+    height: 62px;
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: auto;
+    display: flex;
+    float: right;
+}
+.team_name{
+    height: 62px;
+    margin-right: 10px;
+    cursor: pointer;
+    float: right;
+    margin-top:30px;
+}
+.latest_search {
+    float: left;
+    font-size: 14px;
+    color: white;
+    margin-top:10px;
+
+}
+.latest_a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+.picture{
+    height : 533px;
+    width : 100%;
+    margin-top: 30px;
+}
+.picture1{
+    height: 515px;
+    width : 870px;
+    background : url(./image/top3_1.jpg);
+    float : left;
+    margin-right : 27px;
+    text-align : center;
+    vertical-align : bottom;
+
+}
+.picture2{
+    height : 244px;
+    width: 469px;
+    background : url(./image/top3_2.jpg);
+    float : left;
+}
+.picture3{
+    height : 244px;
+    width: 469px;
+    background : url(./image/top3_3.jpg);
+    float : left;
+    margin-top : 27px;
+}
+.tmap1{
+    width : 322px;
+    height : 253px;
+    margin-right : 27px;
+    background : url(./image/tmap8_1.jpg);
+    float : left;
+}
+.tmap2{
+    width : 322px;
+    height : 253px;
+    margin-right : 27px;
+    background : url(./image/tmap8_2.jpg);
+    float : left;
+}
+.tmap3{
+    width : 322px;
+    height : 253px;
+    margin-right : 27px;
+    background : url(./image/tmap8_3.jpg);
+    float : left;
+}
+.tmap4{
+    width : 322px;
+    height : 253px;
+    background : url(./image/tmap8_4.jpg);
+    float : left;
+}
+.tmap5{
+    width : 322px;
+    height : 253px;
+    margin-top : 20px;
+    margin-right : 27px;
+    background : url(./image/tmap8_5.jpg);
+    float : left;
+}
+.tmap6{
+    width : 322px;
+    height : 253px;
+    margin-top : 20px;
+    margin-right : 27px;
+    background : url(./image/tmap8_6.jpg);
+    float : left;
+}
+.tmap7{
+    width : 322px;
+    height : 253px;
+    margin-top : 20px;
+    margin-right : 27px;
+    background : url(./image/tmap8_7.jpg);
+    float : left;
+}
+.tmap8{
+    width : 322px;
+    height : 253px;
+    margin-top : 20px;
+    background : url(./image/tmap8_8.jpg);
+    float : left;
+}
+.sns1{
+    width : 322px;
+    height : 253px;
+    margin-right : 27px;
+    background : url(./image/sns1.jpg);
+    float : left;
+}
+.sns2{
+    width : 322px;
+    height : 253px;
+    margin-right : 27px;
+    background : url(./image/sns2.jpg);
+    float : left;
+}
+.sns3{
+    width : 322px;
+    height : 253px;
+    margin-right : 27px;
+    background : url(./image/sns3.jpg);
+    float : left;
+}
+.sns4{
+    width : 322px;
+    height : 253px;
+    background : url(./image/sns4.jpg);
+    float : left;
+}
+.sns5{
+    width : 322px;
+    height : 253px;
+    margin-top : 20px;
+    margin-right : 27px;
+    background : url(./image/sns5.jpg);
+    float : left;
+}
+.sns6{
+    width : 322px;
+    height : 253px;
+    margin-top : 20px;
+    margin-right : 27px;
+    background : url(./image/sns6.jpg);
+    float : left;
+}
+.sns7{
+    width : 322px;
+    height : 253px;
+    margin-top : 20px;
+    margin-right : 27px;
+    background : url(./image/sns7.jpg);
+    float : left;
+}
+.sns8{
+    width : 322px;
+    height : 253px;
+    margin-top : 20px;
+    background : url(./image/sns8.jpg);
+    float : left;
+}
+
+.sea1{
+    width : 322px;
+    height : 253px;
+    margin-right : 27px;
+    background : url(./image/sea1.jpg);
+    float : left;
+}
+.sea2{
+    width : 322px;
+    height : 253px;
+    margin-right : 27px;
+    background : url(./image/sea2.jpg);
+    float : left;
+}
+.sea3{
+    width : 322px;
+    height : 253px;
+    margin-right : 27px;
+    background : url(./image/sea3.jpg);
+    float : left;
+}
+.sea4{
+    width : 322px;
+    height : 253px;
+    background : url(./image/sea4.jpg);
+    float : left;
+}
+.sea5{
+    width : 322px;
+    height : 253px;
+    margin-top : 20px;
+    margin-right : 27px;
+    background : url(./image/sea5.JPG);
+    float : left;
+}
+.sea6{
+    width : 322px;
+    height : 253px;
+    margin-top : 20px;
+    margin-right : 27px;
+    background : url(./image/sea6.jpg);
+    float : left;
+}
+.sea7{
+    width : 322px;
+    height : 253px;
+    margin-top : 20px;
+    margin-right : 27px;
+    background : url(./image/sea7.jpg);
+    float : left;
+}
+.sea8{
+    width : 322px;
+    height : 253px;
+    margin-top : 20px;
+    background : url(./image/sea8.jpg);
+    float : left;
+}
+

@@ -1,0 +1,14 @@
+.plan_title {
+    width: 1000px;
+}
+
+.plan_image {
+    width: 60%;
+    background-size: cover;
+    padding-right: 50px;
+    padding-top: 50px;
+    height: auto;
+    background-size: cover;
+    margin-left: 400px;
+    opacity: 0.94;
+}

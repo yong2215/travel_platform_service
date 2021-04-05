@@ -1,0 +1,218 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+#header{
+    color : rgb(133, 112, 112);
+    width: 100%;
+    height: 85px;
+    position: relative;
+    float: left;
+    min-width: 1092px;
+    z-index: 100;
+  }
+  
+.wrap{
+    width: 1092px;
+    margin: 0 auto;
+    position: relative;
+}
+.f1{
+    float: left;
+    color : white;
+    font-size : 25px;
+    padding-top : 12px;
+    padding-left : 25px;
+    position : relative;
+}
+.log{
+    margin-right: 13px;
+    padding-top: 11px;
+    cursor: pointer;
+    
+
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+.cate_list{
+    height: 62px;
+    line-height: 62px;
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+.cate_list li{
+    height: 62px;
+    margin-right: 5px;
+    padding: 0px 19px;
+    cursor: pointer;
+    float: left;
+    color: black;
+}
+div, input, label, a, select, ul, li {
+    box-sizing: border-box;
+}
+ol, ul{
+    list-style: none;
+}
+div {
+    display: block;
+}
+.main_top{
+    background: url(./image/trip1.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 454px;
+}
+/* main_title */
+.main_top_title {
+    color: white;
+    font-size: 44px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 75px;
+}
+.main_top_desc {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+.search_area {
+    width: 640px;
+    height: 138px;
+    border-radius: 3px;
+    background: url(./icon/bgb_60.png) repeat;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 20px;
+    position: relative;
+}
+.search_input {
+    width: 550px;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    color: #b3b3b3;
+    /* background: url(area_search_ico.gif) no-repeat white;
+    background-position: center right; */
+    margin: auto;
+}
+.search_icon{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    color: #b3b3b3;
+    float: right;
+    margin: auto;
+    background: url(./css/icon/area_search_ico.gif) repeat;
+
+}
+#city_autocomplete {
+    width: 600px;
+    /* border: solid 1px #c8c8ca; */
+    background: #fff;
+    position: absolute;
+    top: 70px;
+    z-index: 9;
+    display: none;
+}
+.latest_search {
+    float: left;
+    font-size: 14px;
+    color: white;
+}
+.latest_a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+/* 목록 칸  */
+.page.white {
+    background: white;
+}
+.page {
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.page_title {
+    color: #363636;
+    font-size: 24px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+
+}
+.clear {
+    clear: both;
+}
+.intro_list {
+    padding-top: 10px;
+    width: 1116px;
+    overflow: hidden;
+}
+.intro_box {
+    width: 348px;
+    height: 295px;
+    margin-right: 24px;
+    display: block;
+    cursor: pointer;
+    float: left;
+
+}
+.intro_title {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: #1a7ad9;
+    padding-top: 10px;
+}
+.intro_desc {
+    padding-top: 23px;
+    font-weight: bold;
+    color: #555555;
+    font-size: 14px;
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 22px;
+}
+.intro_box img {
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    overflow: hidden;
+    width:348px;
+    height: 170px;
+}
+.head_right{
+    height: 62px;
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: auto;
+    display: flex;
+    float: right;
+}
+.team_name{
+    height: 62px;
+    margin-right: 10px;
+    cursor: pointer;
+    float: right;
+    margin-top:30px;
+}
+.latest_search {
+    float: left;
+    font-size: 14px;
+    color: white;
+    margin-top:10px;
+
+}
+.latest_a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}

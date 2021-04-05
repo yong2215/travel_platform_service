@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<!--
+	Eventually by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>로그인</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main_login.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<img src="images/travelpizza.png"style="width:auto; height:150px;" />
+				<p>디지털변환 기반의 공공캐쉬백을 활용한 
+					근로자 휴가지원 플랫폼<br />
+					Project pizza에서 제공하는 Smart Experience를 경험하세요. <br>
+				</p>
+			</header>
+
+		<!-- Signup Form -->
+			<form id="signup-form" method="post" action="main.php" name ="thIS">
+				<input type="email" name="email" id="email" placeholder="Email Address" required />
+				<input type="Password" name="psw" id="email" placeholder="Password" required />
+				<input type="button" value="Login" onclick="gopage()"/>
+			</form>
+            <script>
+                function gopage(){
+                    form = document.thIS;
+                    form.submit();
+                }
+                </script>
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://twitter.com/Kor_Visitkorea?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target = "_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="https://ko-kr.facebook.com/9suk9suklive/" target= "_blank" class="icon brands fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="https://www.instagram.com/kto9suk9suk/?hl=ko" target = "_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="https://www.youtube.com/channel/UCmm0wblRTNgKFpqkyEjaKYQ" target="_blank" class="icon brands fa-youtube"><span class="label">500px</span></a></li>
+				</ul>
+				<ul style="opacity:0.1;" class="copyright">
+					<li>&copy; Untitled.</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/main_login.js"></script>
+	</body>
+</html>

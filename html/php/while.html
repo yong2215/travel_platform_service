@@ -1,0 +1,72 @@
+<?php
+
+$conn = mysqli_connect("dddlee1234.iptime.org","wodud2970","jy7950","wodud2970",8816);
+$sql = "select * from travel";
+$result = mysqli_query($conn,$sql);
+var_dump($result);
+if($result){
+	echo "Success! <a href=\"index.php\">back</a>";
+} else{
+	echo "FAIL! <a href=\"index.php\">back</a>";
+	// 에러 표시 
+	mysqli_error($conn);
+	//에러 알아 내기 
+	error_log(mysqli_error($conn));
+}
+
+?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="./css/index.css" rel='stylesheet' type="text/css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="wrap">
+                <h1 class="logo f1" alt="fourworker">
+                    <a href="index.html">
+                        <img src="./css/icon/forworker.png"style="width:auto; height:50.5px; margin-bottom:10px; padding:3px;" />
+                    </a>
+                </h1>
+                <ul class="cate_list f1">
+                    <a href="for_map.html" class=f1>
+                        <li>목록</li>
+                    </a>
+                    <a href="" class=f1>
+                        <li>목록</li>
+                    </a>
+                    <a href="" class=f1>
+                        <li>목록</li>
+                    </a>
+                    <a href="" class=f1>
+                        <li>목록</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="wrap">
+            <div class="head_right">
+                <div class="team_name">팀장 천용재</div>
+                <div class="team_name">조성후</div>
+                <div class="team_name">강찬</div>
+                <div class="team_name">임수민</div>
+                <div class="team_name">박재영</div>
+            </div>
+            </div>
+        </div>
+        <div id="map" style="width:500px;height:400px;"></div>
+        <script src="./js/map.js" type="text/javascript"></script>
+        <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=85e77b172a01a088909ebc1dae9608db"></script>
+    <script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(33.450701, 126.570667),
+			level: 3
+        };
+
+		var map = new kakao.maps.Map(container, options);
+	</script>
+
+
+    </body>
